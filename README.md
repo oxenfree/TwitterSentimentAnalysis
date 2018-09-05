@@ -53,7 +53,7 @@ The tweet dictionary structure is like:
         'nltk_neu': 0.8573198090476511,
         'nltk_neg': 0.7375030867830308,
         'blob_sent': -1
-    },
+        },
     1: {
         'date': datetime.datetime(2018, 8, 30, 19, 24, 6),
         'device': 'Twitter for Android',
@@ -62,8 +62,8 @@ The tweet dictionary structure is like:
         'nltk_neu': 0.8948539758194366,
         'nltk_neg': 0.40765869746484396,
         'blob_sent': 0
-    }
-}`
+        }
+   }`
 
 
 Note: This example shows unstemmed tweets. Stemmed tweets will have the same
