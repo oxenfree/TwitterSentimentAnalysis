@@ -3,10 +3,10 @@
 
 In the same directory as this script, you'll need a file called 'config.py'. In that file, you'll  need to put your twitter authentication credentials.  Such as:
 
-> consumer_key = '_your_twitter_key_'
-> consumer_secret = '_your_twitter_secret_'
-> access_token = '_your_token_'
-> access_token_secret = '_your_token_secret_'
+   consumer_key = '_your_twitter_key_'
+   consumer_secret = '_your_twitter_secret_'
+   access_token = '_your_token_'
+   access_token_secret = '_your_token_secret_'
 
 These are imported at the top of this script and are required
 for the script to run correctly.
