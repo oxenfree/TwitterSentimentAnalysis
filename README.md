@@ -44,12 +44,12 @@ you can have stemmed or sentiment analyzed texts for each tweet.
 The tweet dictionary structure is like:
 
 
-```javascript
+```python
 {
     0: {
-        date: datetime.datetime(2018, 8, 30, 19, 24, 47),
+        'date': datetime.datetime(2018, 8, 30, 19, 24, 47),
         'device': 'Twitter for Android',
-        'text': "As resident of AndrewGillum's Tallahassee...',
+        'text': 'As resident of AndrewGillum's Tallahassee...',
         'nltk_pos': 0.26249691321696916,
         'nltk_neu': 0.8573198090476511,
         'nltk_neg': 0.7375030867830308,
