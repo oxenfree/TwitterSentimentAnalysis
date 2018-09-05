@@ -13,29 +13,19 @@ These are imported at the top of this script and are required
 for the script to run correctly.
 ## USAGE
 
-1) Pick a search phrase to pull tweets from twitter:
+1. Pick a search phrase to pull tweets from twitter:
 search_phrase = '#abcxyz' # change this to the search phrase
-2)  Set a search limit, the total number of tweets to 
-    pull in. Keep in mind twitter has a daily limit on 
-    API calls:
- 
-tweet_limit = 3  # change this to the number of tweets you want
-3) Make a new TweetHandler, like this:
+2. Set a search limit, the total number of tweets to pull in. Keep in mind twitter has a daily limit on API calls.
+3. Make a new TweetHandler, like this:
 handler = TweetHandler()
-4) Pull tweets with your search phrase and size limit:
+4. Pull tweets with your search phrase and size limit:
 tweets = handler.get_tweet_attributes_map(search_phrase, tweet_limit)
-5)  Optional: you can take out the 'RT' and '@' symbols 
-    from the tweet texts.
-    
-clean = handler.clean_tweet_map_texts(tweets)
-6) Optional: get the nltk_sentiment scores for each tweet:
+5. Optional: you can take out the 'RT' and '@' symbols from the tweet texts.
+6. Optional: get the nltk_sentiment scores for each tweet:
 sent_map = handler.add_nltk_sentiment_map(clean)
-7)  Optional: geth the TextBlob sentiment score for each tweet.
-    TextBlob ranks phrases by -1, 0, 1 (-1: negative, 0: neutral, 1: positive)
-sent_map = handler.add_text_blob_sentiment_map(sent_map)
-8)  Optional: stem the tweet texts. Stemming can change the meaning
-    and sentiment of a phrase though.
-stems = handler.stem_tweet_texts(cleaned_tweets)
+7. Optional: geth the TextBlob sentiment score for each tweet. TextBlob ranks phrases by -1, 0, 1 (-1: negative, 0: neutral, 1: positive)
+8. Optional: stem the tweet texts. Stemming can change the meaning and sentiment of a phrase though.
+    
 ## DATA
 
 You will now have a number of tweets with a datetime, text,
