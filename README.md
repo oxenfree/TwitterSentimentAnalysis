@@ -64,7 +64,8 @@ The tweet dictionary structure is like:
         'nltk_neg': 0.40765869746484396,
         'blob_sent': 0
         }
-   }```
+   }
+```
 
 
 Note: This example shows unstemmed tweets. Stemmed tweets will have the same
